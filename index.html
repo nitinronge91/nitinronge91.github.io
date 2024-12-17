@@ -5,27 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Blogs</title>
   <style>
-    /* General Body Styling */
+    /* General Styling */
     body {
       margin: 0;
       padding: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212; /* Dark black background */
-      color: #ffffff; /* White text */
+      background-color: #121212;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     /* Header Styling */
     header {
-      background-color: #00FF7F; /* Neon green */
-      color: #121212; /* Dark text */
+      background-color: #90EE90; /* Light Neon Green */
+      color: #121212;
       text-align: center;
       padding: 1.5rem 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 2px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Navigation Tabs */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1f1f1f;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: #90EE90;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
     }
 
     /* Blog Container */
@@ -37,34 +57,35 @@
 
     /* Blog Post Styling */
     .blog-post {
-      background-color: #1f1f1f; /* Slightly lighter black */
-      border-left: 5px solid #00FF7F; /* Neon green left border */
+      background-color: #1f1f1f;
+      border-left: 5px solid #90EE90; /* Light Neon Green Border */
       margin: 20px 0;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 255, 127, 0.2); /* Subtle neon green glow */
+      box-shadow: 0 4px 10px rgba(144, 238, 144, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .blog-post:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 255, 127, 0.4); /* Enhanced neon glow */
+      box-shadow: 0 6px 15px rgba(144, 238, 144, 0.4);
     }
 
     .blog-post h2 {
-      color: #00FF7F; /* Neon green title */
+      color: #90EE90;
       margin-bottom: 10px;
     }
 
     .blog-post p {
-      font-size: 1.1rem;
-      color: #cccccc; /* Light gray text for readability */
+      font-size: 1rem;
+      color: #cccccc;
+      margin: 10px 0;
     }
 
     /* Footer Styling */
     footer {
-      background-color: #00FF7F; /* Neon green */
-      color: #121212; /* Dark text */
+      background-color: #90EE90;
+      color: #121212;
       text-align: center;
       padding: 1rem 0;
       position: fixed;
@@ -73,52 +94,48 @@
       font-size: 0.9rem;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* Utility Classes */
-    .center-text {
-      text-align: center;
-    }
-
-    a {
-      text-decoration: none;
-      color: #00FF7F;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <!-- Page Header -->
-  <header>
-    My Professional Blogs
-  </header>
+  <header>My Professional Blogs</header>
+
+  <!-- Navigation Tabs -->
+  <nav>
+    <a href="#blog1">Blog 1</a>
+    <a href="#blog2">Blog 2</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <!-- Blog Content -->
   <div class="blog-container">
     <!-- Blog 1 -->
-    <div class="blog-post">
+    <div class="blog-post" id="blog1">
       <h2>Embracing Modern Web Design</h2>
       <p>
-        Modern web design combines aesthetics and usability. The use of bold colors like neon green, dark backgrounds, and sharp layouts creates engaging experiences.
+        Modern web design focuses on combining aesthetics with usability. Designers today prioritize clean layouts, contrasting colors, and intuitive navigation to ensure seamless user experiences.
+      </p>
+      <p>
+        The use of dark themes paired with light neon highlights has gained popularity. Such combinations reduce eye strain and offer a futuristic, professional feel that appeals to tech-savvy users.
       </p>
     </div>
 
     <!-- Blog 2 -->
-    <div class="blog-post">
+    <div class="blog-post" id="blog2">
       <h2>Why Dark Mode is Trending</h2>
       <p>
-        Dark mode improves readability, reduces eye strain, and looks sleek. Designers are blending dark palettes with vibrant accents for a fresh, modern feel.
+        Dark mode has taken over modern applications and websites. It provides a sleek appearance while conserving energy on devices with OLED screens.
+      </p>
+      <p>
+        Designers are blending dark backgrounds with light neon elements to create striking visuals that are easier on the eyes, especially in low-light environments.
       </p>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer>
-    &copy; 2024 My Blogs | Powered by GitHub Pages
+  <footer id="contact">
+    &copy; 2024 My Blogs | Contact: myblogs@example.com
   </footer>
 </body>
 </html>
