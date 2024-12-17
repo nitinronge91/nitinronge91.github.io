@@ -3,94 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs</title>
+  <title>Professional Blogs</title>
   <style>
     /* General Body Styling */
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff; /* White background */
-      color: #333; /* Default text color */
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212; /* Dark black background */
+      color: #ffffff; /* White text */
+      line-height: 1.6;
     }
 
     /* Header Styling */
     header {
-      background-color: #28a745; /* Green */
-      color: white;
+      background-color: #00FF7F; /* Neon green */
+      color: #121212; /* Dark text */
       text-align: center;
       padding: 1.5rem 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     /* Blog Container */
     .blog-container {
-      width: 80%;
-      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
     }
 
     /* Blog Post Styling */
     .blog-post {
-      background-color: #f9f9f9; /* Light gray background */
-      border: 2px solid #28a745; /* Green border */
+      background-color: #1f1f1f; /* Slightly lighter black */
+      border-left: 5px solid #00FF7F; /* Neon green left border */
       margin: 20px 0;
-      padding: 15px;
+      padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 255, 127, 0.2); /* Subtle neon green glow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 255, 127, 0.4); /* Enhanced neon glow */
     }
 
     .blog-post h2 {
-      color: #28a745; /* Green title */
+      color: #00FF7F; /* Neon green title */
       margin-bottom: 10px;
     }
 
     .blog-post p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
+      font-size: 1.1rem;
+      color: #cccccc; /* Light gray text for readability */
     }
 
     /* Footer Styling */
     footer {
-      background-color: #28a745; /* Green */
-      color: white;
+      background-color: #00FF7F; /* Neon green */
+      color: #121212; /* Dark text */
       text-align: center;
-      padding: 10px 0;
+      padding: 1rem 0;
       position: fixed;
       bottom: 0;
       width: 100%;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Utility Classes */
+    .center-text {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00FF7F;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Page Title -->
+  <!-- Page Header -->
   <header>
-    Blogs
+    My Professional Blogs
   </header>
 
   <!-- Blog Content -->
   <div class="blog-container">
     <!-- Blog 1 -->
     <div class="blog-post">
-      <h2>Exploring Nature's Beauty</h2>
+      <h2>Embracing Modern Web Design</h2>
       <p>
-        Nature offers us beauty, peace, and inspiration. From majestic mountains to calming seas, it nourishes our souls and refreshes minds.
+        Modern web design combines aesthetics and usability. The use of bold colors like neon green, dark backgrounds, and sharp layouts creates engaging experiences.
       </p>
     </div>
 
     <!-- Blog 2 -->
     <div class="blog-post">
-      <h2>The Future of Technology</h2>
+      <h2>Why Dark Mode is Trending</h2>
       <p>
-        Technology evolves rapidly, shaping our lives. From AI to quantum computing, advancements bring opportunities and challenges for tomorrow’s world.
+        Dark mode improves readability, reduces eye strain, and looks sleek. Designers are blending dark palettes with vibrant accents for a fresh, modern feel.
       </p>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    &copy; 2024 Blogs | Powered by GitHub Pages
+    &copy; 2024 My Blogs | Powered by GitHub Pages
   </footer>
 </body>
 </html>
